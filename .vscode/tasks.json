@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build EmoBot",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "main.cpp",
+          "emotion_detector.cpp",
+          "response_generator.cpp",
+          "-o",
+          "EmoBot.exe",
+          "-mwindows"  // This tells g++ to treat it as a GUI app with WinMain()
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Compile EmoBot with g++"
+      }
+    ]
+  }
+  
